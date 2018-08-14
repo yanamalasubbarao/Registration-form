@@ -5,10 +5,10 @@ import { first } from 'rxjs/operators';
 
 import { AlertService, UserService } from '../_services';
 
-@Component({templateUrl: 'register.component.html'})
+@Component({ templateUrl: 'register.component.html' })
 export class RegisterComponent implements OnInit {
-   // designations = ['SD', 'Account', 'SSD', 'Manager'];
-   // departments = ['HR', 'MG', 'TL', 'AC'];
+    // designations = ['SD', 'Account', 'SSD', 'Manager'];
+    // departments = ['HR', 'MG', 'TL', 'AC'];
     registerForm: FormGroup;
     loading = false;
     submitted = false;

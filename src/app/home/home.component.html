@@ -3,19 +3,13 @@
 <h3>All registered users:</h3>
 <ul>
     <li *ngFor="let user of users">
-        {{user.username}}
-         ({{user.firstName}} 
-          {{user.lastName}} 
-          {{user.dateofbirth}} 
-          {{user.salary}} 
-          {{user.designation}} 
-          {{user.department}} 
-          {{user.city}}
-          {{user.state}} 
-          {{user.country}} 
-          {{user.postalcode}})
-        - <a (click)="deleteUser(user.id)" class="text-danger">Delete</a>
-        - <a (click)="updateUser(user.id)" class="text-danger">Edit</a>
+        {{user.username}} ({{user.firstName}} {{user.lastName}} {{user.dateofbirth}} {{user.salary}} {{user.designation}} {{user.department}}
+        {{user.city}} {{user.state}} {{user.country}} {{user.postalcode}}) -
+        <a (click)="deleteUser(user.id)" class="text-danger">Delete</a>
+        -
+        <a (click)="updateUser(user.id)" class="text-danger">Edit</a>
     </li>
 </ul>
-<p><a [routerLink]="['/login']">Logout</a></p>
+<p>
+    <a [routerLink]="['/login']">Logout</a>
+</p>
